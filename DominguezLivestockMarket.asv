@@ -55,9 +55,9 @@ if auction.money >= price && str2num(auction.stock(index).String) >= 1
    cattle= ['Winner of ', source.String];
 if index == 1
 auction.hereford = auction.hereford +1;
-else 
+else %
 auction.angus = auction.angus + 1;
-end 
+end %
   msgbox(cattle, 'Dominguez Livestock Market Slot', 'modal');
 elseif auction.money < price %if they bid less than what is asked for they lose the bid
     msgbox('Bid Lost!', 'Dominguez Livestock Market Error','error','modal')
